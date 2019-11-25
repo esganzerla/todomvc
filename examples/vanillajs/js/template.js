@@ -34,7 +34,7 @@
 			'<li data-id="{{id}}" class="{{completed}}">' +
 			'<div class="view">' +
 			'<input class="toggle" id="checkmark-{{id}}" type="checkbox" {{checked}} tabindex="-1">' +
-			'<label for="checkmark-{{id}}" tabindex="0">{{title}}</label>' +
+			'<label for="checkmark-{{id}}" tabindex="0">{{title}} <span aria-label="Tap to mark as complete"></span></label>' +
 			'<button class="destroy"></button>' +
 			"</div>" +
 			"</li>";
