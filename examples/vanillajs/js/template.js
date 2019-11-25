@@ -33,9 +33,9 @@
 		this.defaultTemplate =
 			'<li data-id="{{id}}" class="{{completed}}">' +
 			'<div class="view">' +
-			'<input class="toggle" id="checkmark-{{id}}" type="checkbox" {{checked}} aria-label="{{title}}, Check to mark as complete" tabindex="0">' +
+			'<input class="toggle" id="checkmark-{{id}}" type="checkbox" {{checked}} aria-label="{{title}}, Mark as complete" tabindex="0">' +
 			'<label for="checkmark-{{id}}">{{title}}</label>' +
-			'<button class="destroy" aria-label="Tap to delete item"></button>' +
+			'<button class="destroy" aria-label="Tap to delete item, {{title}}"></button>' +
 			"</div>" +
 			"</li>";
 	}
