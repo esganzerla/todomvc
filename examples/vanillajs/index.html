@@ -13,6 +13,7 @@
 				<input class="new-todo" placeholder="What needs to be done?" autofocus>
 			</header>
 			<section class="main">
+				<h2 class="a11y-copy" aria-label="You to-do items"></h2>
 				<input
 					id="toggle-all"
 					class="toggle-all"
@@ -24,15 +25,18 @@
 			</section>
 			<footer class="footer">
 				<span class="todo-count"></span>
+				<h2 class="a11y-copy" aria-label="Filter items"></h2>
 				<ul class="filters">
 					<li>
-						<a href="#/" class="selected">All</a>
+						<a href="#/" class="selected" aria-label="Show all items">All</a>
 					</li>
 					<li>
-						<a href="#/active">Active</a>
+						<a href="#/active" aria-label="Show only active items">Active</a>
 					</li>
 					<li>
-						<a href="#/completed">Completed</a>
+						<a href="#/completed" aria-label="Show only completed items"
+							>Completed</a
+						>
 					</li>
 				</ul>
 				<button class="clear-completed">Clear completed</button>
