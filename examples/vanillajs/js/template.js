@@ -35,7 +35,7 @@
 			'<div class="view">' +
 			'<input class="toggle" id="checkmark-{{id}}" type="checkbox" {{checked}} aria-label="{{title}}, Check to mark as complete" tabindex="0">' +
 			'<label for="checkmark-{{id}}">{{title}}</label>' +
-			'<button class="destroy"></button>' +
+			'<button class="destroy" aria-label="Tap to delete item"></button>' +
 			"</div>" +
 			"</li>";
 	}
