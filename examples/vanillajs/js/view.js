@@ -198,14 +198,6 @@
 				handler({ id: self._itemId(this) });
 			});
 		} else if (event === "itemToggle") {
-			$delegate(self.$todoList, "label", "keypress", function(evt) {
-				evt.preventDefault();
-				if (evt.keyCode !== self.SPACE_KEY) return;
-				handler({
-					id: self._itemId(this),
-					completed: !this.previousSibling.checked
-				});
-			});
 			$delegate(self.$todoList, ".toggle", "click", function() {
 				handler({
 					id: self._itemId(this),
