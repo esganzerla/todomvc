@@ -33,8 +33,8 @@
 		this.defaultTemplate =
 			'<li data-id="{{id}}" class="{{completed}}">' +
 			'<div class="view">' +
-			'<input class="toggle" id="checkmark-{{id}}" type="checkbox" {{checked}} tabindex="-1">' +
-			'<label for="checkmark-{{id}}" tabindex="0">{{title}} <span aria-label="Tap to mark as complete"></span></label>' +
+			'<input class="toggle" id="checkmark-{{id}}" type="checkbox" {{checked}} aria-label="{{title}}, Check to mark as complete" tabindex="0">' +
+			'<label for="checkmark-{{id}}">{{title}}</label>' +
 			'<button class="destroy"></button>' +
 			"</div>" +
 			"</li>";
@@ -72,7 +72,7 @@
 			}
 
 			template = template.replace(/{{id}}/g, data[i].id);
-			template = template.replace("{{title}}", escape(data[i].title));
+			template = template.replace(/{{title}}/g, escape(data[i].title));
 			template = template.replace("{{completed}}", completed);
 			template = template.replace("{{checked}}", checked);
 
